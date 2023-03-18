@@ -5,6 +5,7 @@
 /**
  * main - Entry point
  *
+ * Description: Check the last digit of the number
  * Return: Always 0 (Success)
  */
 int main(void)
