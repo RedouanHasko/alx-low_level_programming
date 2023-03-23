@@ -4,7 +4,7 @@
  * print_line - print '_' n times.
  * @n: is the number of times the character _ should be printed.
  */
-void print_line(int n);
+void print_line(int n)
 {
 	int i;
 
