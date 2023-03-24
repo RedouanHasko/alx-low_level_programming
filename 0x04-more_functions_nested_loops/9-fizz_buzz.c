@@ -1,4 +1,4 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
  * main - print from 1 to 100 changing the multiples of 3 and 5 .
