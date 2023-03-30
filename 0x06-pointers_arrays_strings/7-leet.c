@@ -23,7 +23,7 @@ char *leet(char *s)
 		{
 			if (*(s + j) == upper[i] || *(s + j) == lower[i])
 			{
-				*(s + j) = number[i];
+				*(s + j) = numbers[i];
 				break;
 			}
 		}
