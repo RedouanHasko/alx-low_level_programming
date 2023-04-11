@@ -17,10 +17,14 @@ int main(int argc, char *argv[])
 		for (i = 1 ; i < argc ; i++)
 		{
 			c = argv[i];
-			if (*c < 47 || *c > 57)
+			while (*c != 0)
 			{
-				printf("Error\n");
-				return (1);
+				if (*c < 47 || *c > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+				c++;
 			}
 			res += atoi(argv[i]);
 		}
