@@ -8,7 +8,6 @@
 int main(void)
 {
 	int x, y;
-	int i = 0;
 
 	for (x = 0 ; x <= 98 ; x++)
 	{
@@ -19,13 +18,14 @@ int main(void)
 			putchar(' ');
 			putchar((y / 10) + '0');
 			putchar((y % 10) + '0');
-			if (i != 4949)
+			if (x == 98 && y == 99)
 			{
-				putchar(',');
-				putchar(' ');
+				continue;
 			}
-			i++;
+			putchar(',');
+			putchar(' ');
 		}
 	}
+	putchar('\n');
 	return (0);
 }
