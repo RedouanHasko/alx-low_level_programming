@@ -19,7 +19,7 @@ void print_times_table(int n)
 		for (c = 1; c <= n ; c++)
 		{
 			_putchar(',');
-			_putchar(' ');
+			_putchar('	');
 			x = r * c;
 
 			if (x <= 99 || x <= 9)
