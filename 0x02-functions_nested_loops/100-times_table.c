@@ -19,10 +19,14 @@ void print_times_table(int n)
 		for (c = 1; c <= n ; c++)
 		{
 			_putchar(',');
-			_putchar('   ');
+			_putchar(' ');
 			x = r * c;
 
-			if (x <= 99 || x <= 9)
+			if (x <= 99)
+			{
+				_putchar(' ');
+			}
+			if (x <= 9)
 			{
 				_putchar(' ');
 			}
