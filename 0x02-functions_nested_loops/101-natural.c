@@ -6,7 +6,7 @@
  * that multiples of 3 and 5 .
  * Return: 0 (Success).
  */
-int main()
+int main(void)
 {
 	int i, sum = 0;
 
