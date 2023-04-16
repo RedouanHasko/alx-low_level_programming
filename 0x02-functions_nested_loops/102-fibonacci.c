@@ -8,16 +8,15 @@
 int main(void)
 {
 	int i;
-	long long int a = 1, b = 2, f;
+	long a = 1, b = 2, f;
 	
-	f = a + b;
-	printf("%lld, %lld", a, b);
-	for (i = 3; i <= 50 ; i++)
+	printf("%lu, %lu", a, b);
+	for (i = 3; i < 50 ; i++)
 	{
-		printf(", %lld", f);
+		printf(", %lu", f);
 		a = b;
 		b = f;
-		c = a + b;
+		f = a + b;
 	}
 	printf("\n");
 	return (0);
