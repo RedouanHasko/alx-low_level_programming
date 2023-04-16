@@ -8,15 +8,16 @@
 int main(void)
 {
 	int i;
-	unsigned int a = 1, b = 2, f;
-
-	printf("%u, %u", a, b);
-	for (i = 2; i <= 50 ; i++)
+	long long int a = 1, b = 2, f;
+	
+	f = a + b;
+	printf("%lld, %lld", a, b);
+	for (i = 3; i <= 50 ; i++)
 	{
-		f = a + b;
-		printf(", %u", f);
+		printf(", %lld", f);
 		a = b;
 		b = f;
+		c = a + b;
 	}
 	printf("\n");
 	return (0);
