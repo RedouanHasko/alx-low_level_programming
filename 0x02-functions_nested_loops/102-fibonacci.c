@@ -16,7 +16,7 @@ int main(void)
 		f = a + b;
 		printf(", %lld", f);
 		a = b;
-		b = c;
+		b = f;
 	}
 	printf("\n");
 	return (0);
