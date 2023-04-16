@@ -11,7 +11,7 @@ int main(void)
 	unsigned int a = 1, b = 2, f;
 
 	printf("%u, %u", a, b);
-	for (i = 2; i < 50 ; i++)
+	for (i = 2; i <= 50 ; i++)
 	{
 		f = a + b;
 		printf(", %u", f);
