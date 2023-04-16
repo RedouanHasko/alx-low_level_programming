@@ -8,13 +8,13 @@
 int main(void)
 {
 	int i;
-	long long int a = 1, b = 2, f;
+	unsigned int a = 1, b = 2, f;
 
-	printf("%lld, %lld", a, b);
+	printf("%lu, %lu", a, b);
 	for (i = 2; i < 50 ; i++)
 	{
 		f = a + b;
-		printf(", %lld", f);
+		printf(", %lu", f);
 		a = b;
 		b = f;
 	}
