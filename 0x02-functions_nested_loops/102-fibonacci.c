@@ -10,11 +10,11 @@ int main(void)
 	int i;
 	unsigned int a = 1, b = 2, f;
 
-	printf("%lu, %lu", a, b);
+	printf("%u, %u", a, b);
 	for (i = 2; i < 50 ; i++)
 	{
 		f = a + b;
-		printf(", %lu", f);
+		printf(", %u", f);
 		a = b;
 		b = f;
 	}
