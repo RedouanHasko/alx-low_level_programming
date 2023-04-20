@@ -7,8 +7,8 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0, len, f;
-	char *str, c;
-
+	char *str;
+	char c;
 	va_list ap;
 
 	len = strlen(format);
@@ -17,9 +17,7 @@ void print_all(const char * const format, ...)
 	{
 		c = format[i];
 		if (c != 'c' || c != 'i' || c != 'f' || c != 's')
-		{
 			i++;
-		}
 		else
 		{
 			switch (format[i])
@@ -36,16 +34,12 @@ void print_all(const char * const format, ...)
 				case 's';
 					str = va_arg(ap, char *);
 					if (str == NULL)
-					{
 						str = "(nil)";
-					}
 					printf("%s", str);
 					break;
 			}
 			if (i < len - 1)
-			{
 				printf(", ");
-			}
 			i++;
 		}
 	}
