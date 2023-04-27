@@ -1,1 +1,1 @@
-# This is the readme file the 0x12. C - Singly linked lists project and Tasks
+# This is the readme file for the 0x12. C - Singly linked lists project and Tasks
