@@ -2,7 +2,9 @@
 #define LISTS_H
 
 #include <stdlib.h>
-#include <atdio.h>
+#include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 
 /**
 * struct listint_s - singly linked list
