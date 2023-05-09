@@ -8,6 +8,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+
 #define BUFFER_SIZE 1024
 
 int _putchar(char c);
