@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	inputF = open(argv[1], O_RDONLY);
 	if (inputF == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: C'ant read from file %s\n",
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
 		argv[1]);
 		exit(98);
 	}
@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
 		nb_write = write(outputF, text, nb_read);
 		if (nb_write == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: C'ant write to %s\n",
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n",
 			argv[2]);
 			exit(99);
 		}
