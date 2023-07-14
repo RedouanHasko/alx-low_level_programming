@@ -15,19 +15,20 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-	exit(97);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
 	}
 	fdin = open(argv[1], O_RDONLY);
 	if (fdin == -1)
 	{
-	dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-	exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n",
+				argv[1]);
+		exit(98);
 	}
 	fdout = open(argv[2], O_CREAT, O_WRONLY, O_TRUNC, 0664);
 	if (fdout == -1)
 	{
-	dprintf(STDERR_FILENO, "Error: C'ant write to %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: C'ant write to %s\n", argv[2]);
 		exit(99);
 	}
 	while ((nbr = read(fdin, txt, BUFFER_SIZE)) > 0)
@@ -35,14 +36,16 @@ int main(int argc, char *argv[])
 		nbw = write(fdout, txt, nbr);
 		if (nbw == -1)
 		{
-		dprintf(STDERR_FILENO, "Error: c'ant write to %s\n", argv[2]);
-		exit(99);
+			dprintf(STDERR_FILENO, "Error: c'ant write to %s\n",
+					argv[2]);
+			exit(99);
 		}
 	}
 	if (nbr == -1)
 	{
-	dprintf(STDERR_FILENO, "Error: C'ant red from file %s\n", argv[1]);
-	exit(98);
+		dprintf(STDERR_FILENO, "Error: C'ant red from file %s\n",
+				argv[1]);
+		exit(98);
 	}
 	cls_f(fdin);
 	cls_f(fdout);
